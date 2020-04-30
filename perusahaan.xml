@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE perusahaan
+[
+    <!ELEMENT nik (#PCDATA)>
+    <!ELEMENT nama (nama_depan, nama_belakang+)>
+    <!ELEMENT nama_depan (#PCDATA)>
+    <!ELEMENT nama_belakang (#PCDATA)>
+    <!ELEMENT jabatan (#PCDATA)>
+    <!ELEMENT gaji (lembur, item+)>
+    <!ELEMENT lembur (#PCDATA)>
+    <!ELEMENT item (#PCDATA)>
+    <!ELEMENT tunjangan (item*)>
+    <!ELEMENT potongan (item*)>
+]>
+
+<perusahaan>
+    <karyawan>
+        <nik>3303181101531231</nik>
+        <nama>
+            <nama_depan>Santika</nama_depan>
+            <nama_belakang>Dewi Mulyani</nama_belakang>
+        </nama>
+        <jabatan>Sekertaris</jabatan>
+        <gaji lembur="300000">15000000</gaji>
+        <tunjangan>
+            <item>1000000</item>
+            <item>750000</item>
+        </tunjangan>
+        <potongan>
+            <item>500000</item>
+        </potongan>
+    </karyawan>
+    <karyawan>
+        <nik>3303111015672192</nik>
+        <nama>
+            <nama_depan>Nur</nama_depan>
+            <nama_belakang>Rohmah</nama_belakang>
+        </nama>
+        <jabatan>Humas</jabatan>
+        <gaji lembur="100000">10000000</gaji>
+    </karyawan>
+</perusahaan>

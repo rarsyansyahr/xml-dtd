@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE koleksi
+[
+    <!ELEMENT judul (nama, tahun_produksi)>
+    <!ELEMENT nama (#PCDATA)>
+    <!ELEMENT tahun_produksi (#PCDATA)>
+    <!ELEMENT pemain (nama+)>
+    <!ELEMENT sutradara (#PCDATA)>
+    <!ELEMENT genre (item+)>
+    <!ELEMENT item (#PCDATA)>
+    <!ELEMENT produser (#PCDATA)>
+]>
+
+<koleksi>
+    <film>
+        <judul>
+            <nama>The Prolog</nama>
+            <tahun_produksi>2014</tahun_produksi>
+        </judul>
+        <pemain>
+            <nama>Rizky</nama>
+            <nama>Anggit</nama>
+        </pemain>
+        <sutradara>Andika</sutradara>
+        <genre>
+            <item>Action</item>
+            <item>Technology</item>
+        </genre>
+        <produser>Andy</produser>
+    </film>
+    <film>
+        <judul>
+            <nama>The Santri</nama>
+            <tahun_produksi>2019</tahun_produksi>
+        </judul>
+        <pemain>
+            <nama>Azmi</nama>
+        </pemain>
+        <sutradara>Ahkam</sutradara>
+        <genre>
+            <item>Religy</item>>
+        </genre>
+        <produser>Gus</produser>
+    </film>
+</koleksi>
